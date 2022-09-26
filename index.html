@@ -10,8 +10,52 @@
   <link rel="stylesheet" href="index.css">
   <title>Awesome Books</title>
 </head>
-  <body>
-    <h1>test</h1>
-  <script src="index.js"></script>
-  </body>
+<body class="dFlex">
+  <header>
+    <nav class="dFlex container border">
+      <h1 class="paddingStart">Awesome Books</h1>
+      <ul class="dFlex listStyle paddingEnd alignCenter">
+        <li id="listLink"><a id="list-link">List</a></li>
+        <li><div class="verticalLine"></div></li>
+        <li id="addLink"><a id="add-link">Add new</a></li>
+        <li><div class="verticalLine"></div></li>
+        <li id="contactLink"><a id="contact-link">Contact</a></li>
+      </ul>
+    </nav>
+    <p id="dateTime" class="dFlex"></p>
+  </header>
+
+  <section id="listPage">
+    <h1 class="headings">All awesome books</h1>
+    <article id="bookInfo" class="marginHauto border "></article>
+  </section>
+
+  <section id="addPage" class="displayNone">
+    <h2 class="headings">Add a new book</h2>
+    <form id="form" class="dFlex marginHauto">
+      <label for="title">
+      </label>
+      <input class="border" type="text" name="title" placeholder="Enter title" id="title" >
+      <label for="author">
+      </label>
+      <input class="border" type="text" name="author" placeholder="Enter author name" id="author">
+      <input class="button border" type="submit" value="Add">
+    </form>
+  </section>
+
+  <section id="contactPage" class="displayNone">
+    <h2 class="headings">CONTACT INFORMATION</h2>
+    <p class="text-center">If you have any questions reach out to us</p>
+    <ul class="listPosition dBlock list">
+      <li class="listItem">our email: email@mail.com</li>
+      <li class="listItem">our phone number: 04883762923</li>
+      <li class="listItem">our address: 32, wale drive, velocity ,8900</li>
+    </ul>
+  </section>
+
+  <footer id="footer" class="container paddingStart border">
+    Copyright...
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
 </html>
