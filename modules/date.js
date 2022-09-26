@@ -1,6 +1,7 @@
-import { DateTime } from "./luxon.js";
+/* eslint-disable import/prefer-default-export */
+import { DateTime } from './luxon.js';
 
-export let upDate = () => {
-const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
-return now;
-}
+export const upDate = () => {
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
+  return now;
+};

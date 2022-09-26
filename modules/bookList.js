@@ -1,4 +1,5 @@
-import { BookTemplate } from "./bookTemplate.js"
+import { BookTemplate } from './bookTemplate.js';
+
 export const inputTitle = document.getElementById('title');
 export const inputAuthor = document.getElementById('author');
 export const bookInfo = document.getElementById('bookInfo');
@@ -46,8 +47,8 @@ export class BookList {
   }
 
   removeList = (index) => {
-        this.bookArray.splice(btnList.indexOf(index), 1);
-        localStorage.setItem('BookLibrary', JSON.stringify(this.bookArray));
-        this.displayBookList();
+    this.bookArray.splice(btnList.indexOf(index), 1);
+    localStorage.setItem('BookLibrary', JSON.stringify(this.bookArray));
+    this.displayBookList();
   }
 }

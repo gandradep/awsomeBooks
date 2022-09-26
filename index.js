@@ -1,12 +1,17 @@
-import { upDate } from "./modules/date.js";
-import * as nav from "./modules/displayListPage.js";
-import * as modBook from "./modules/bookList.js"
+import { upDate } from './modules/date.js';
+
+import * as nav from './modules/displayListPage.js';
+
+import * as modBook from './modules/bookList.js';
+
 const myBookList = new modBook.BookList();
 const form = document.getElementById('form');
 
 /* setting date */
 const date = document.getElementById('dateTime');
-let refreshDate = () => date.innerText =upDate();
+const refreshDate = () => {
+  date.innerText = upDate();
+};
 setInterval(refreshDate, 1000);
 
 /* page navegation events */
@@ -35,7 +40,7 @@ form.addEventListener('submit', (event) => {
   // myBookList.removeList();
 });
 modBook.bookInfo.addEventListener('click', (e) => {
-  if(e.target.classList.contains('button')){
-  myBookList.removeList(e.target);
+  if (e.target.classList.contains('button')) {
+    myBookList.removeList(e.target);
   }
 });
